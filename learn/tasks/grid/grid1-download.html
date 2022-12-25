@@ -18,7 +18,7 @@
         margin: 0;
       }
 
-      .grid > * {
+      .grid>* {
         background-color: #4D7298;
         border: 2px solid #77A6B6;
         border-radius: 0.5em;
@@ -27,7 +27,9 @@
       }
 
       .grid {
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
       }
     </style>
 
@@ -36,6 +38,10 @@
   <body>
 
     <div class="grid">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
       <div>One</div>
       <div>Two</div>
       <div>Three</div>

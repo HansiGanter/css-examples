@@ -18,7 +18,7 @@
         margin: 0;
       }
 
-      .grid > * {
+      .grid>* {
         background-color: #4D7298;
         border: 2px solid #77A6B6;
         border-radius: .5em;
@@ -28,8 +28,30 @@
 
       .grid {
         display: grid;
+        grid-template-areas:
+          "one one one"
+          "two three three"
+          ". four four";
         grid-template-columns: 1fr 2fr;
         gap: 10px;
+      }
+
+      .grid {}
+
+      .one {
+        grid-area: one;
+      }
+
+      .two {
+        grid-area: two;
+      }
+
+      .three {
+        grid-area: three;
+      }
+
+      .four {
+        grid-area: four;
       }
     </style>
 
